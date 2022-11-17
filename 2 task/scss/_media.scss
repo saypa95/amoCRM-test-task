@@ -1,0 +1,302 @@
+/* Landscape tablets and medium desktops */
+@media (max-width: 1199px) {
+  .header {
+    &_logo {
+      margin-right: 34px;
+    }
+
+    &_phone {
+      margin-right: 31px;
+    }
+
+    &_socials {
+      gap: 20px;
+    }
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .footer {
+    &_about-company {
+      margin-right: 65px;
+    }
+
+    .col-1 {
+      margin-right: 34px;
+    }
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+  .header {
+    &_logo {
+      margin-right: 20px;
+    }
+
+    &_contacts {
+      flex-direction: column;
+    }
+
+    &_phone {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+
+    &_socials {
+      flex-flow: row-reverse;
+    }
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .footer {
+    &_about-company {
+      margin-right: 40px;
+    }
+
+    .col-1 {
+      margin-right: 34px;
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .container {
+    max-width: 450px;
+  }
+  .header {
+    &_row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_logo {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &_contacts {
+      display: none;
+    }
+  }
+
+  .main {
+    &_row {
+      flex-direction: column;
+    }
+
+    &_title-block {
+      margin-bottom: 40px;
+    }
+
+    &_content-block {
+      text-align: left;
+    }
+  }
+
+  .footer {
+    &_row {
+      flex-direction: column;
+    }
+
+    &_about-company {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    &_menu {
+      margin-bottom: 40px;
+    }
+
+    &_contacts {
+      text-align: left;
+      margin-left: 0;
+    }
+
+    &_socials {
+      flex-flow: row;
+    }
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  html {
+    background: #0e1014;
+  }
+
+  .container {
+    max-width: 320px;
+  }
+
+  .header {
+    padding: 20px 0;
+    &_logo {
+      display: none;
+    }
+  }
+
+  .menu {
+    gap: 16px;
+    &_item {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &_item:last-child {
+      display: none;
+    }
+  }
+
+  .main {
+    padding-top: 40px;
+    padding-bottom: 55px;
+    background-image: url(../resources/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &_title {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 15px;
+    }
+
+    &_content-block {
+      max-width: 300px;
+      text-align: left;
+    }
+
+    &_gifts-title {
+      margin-bottom: 20px;
+      .uppercase {
+        text-transform: none;
+      }
+    }
+
+    &_gifts-list {
+      display: none;
+    }
+
+    &_gifts-list-mobile {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 14px;
+      list-style-type: none;
+    }
+
+    &_gift-mobile {
+      font-family: "Montserrat";
+      font-size: 13px;
+      line-height: 16px;
+
+      letter-spacing: 0.05em;
+      &:before {
+        content: "\2014";
+        margin-right: 5px;
+        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:nth-child(3) {
+        margin-right: 15px;
+      }
+    }
+
+    &_btn {
+      display: none;
+    }
+  }
+
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 60px;
+
+    &_about-company {
+      margin-bottom: 30px;
+    }
+
+    &_about-company-title {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &_about-company-list {
+      .list {
+        &_item {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+
+    &_menu {
+      margin-bottom: 30px;
+    }
+
+    &_menu-title {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &_menu-list {
+      .col-1 {
+        margin-right: 48px;
+      }
+
+      .col-2 {
+        .mobile-hide {
+          display: none;
+        }
+        .mobile-show {
+          display: list-item;
+        }
+      }
+    }
+
+    &_menu-item {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &_contacts-title {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &_phone {
+      margin-bottom: 8px;
+    }
+
+    &_socials {
+      margin-bottom: 10px;
+    }
+
+    &_address {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+}

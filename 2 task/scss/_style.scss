@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400&display=swap");
+
+html {
+  background-image: url(../resources/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color: #e4e5ea;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.header {
+  padding-top: 57px;
+
+  &_row {
+    display: flex;
+  }
+
+  &_logo {
+    max-width: 140px;
+    margin-right: 50px;
+  }
+
+  &_logo-img {
+    margin-bottom: 10px;
+  }
+
+  &_logo-title {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &_menu {
+    margin-top: 4px;
+  }
+
+  &_contacts {
+    display: flex;
+    margin-top: 4px;
+    margin-left: auto;
+  }
+
+  &_phone {
+    margin-right: 47px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &_socials {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  &_item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.main {
+  padding-top: 90px;
+  padding-bottom: 69px;
+
+  &_row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_title-block {
+    max-width: 362px;
+  }
+
+  &_title {
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 30px;
+    .gradient {
+      font-weight: 900;
+    }
+  }
+
+  &_subtitle {
+    font-family: "Montserrat";
+    max-width: 275px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &_content-block {
+    max-width: 300px;
+    text-align: right;
+  }
+
+  &_gifts-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+    .gradient {
+      font-weight: 700;
+    }
+  }
+
+  &_gifts-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 61px;
+  }
+
+  &_gift {
+    max-width: 135px;
+  }
+
+  &_gift-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  &_gift-subtitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &_gifts-list-mobile {
+    display: none;
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 21px 35px;
+  background: #4077f3;
+}
+
+.footer {
+  padding-top: 55px;
+  padding-bottom: 20px;
+
+  &_row {
+    display: flex;
+  }
+
+  &_about-company {
+    margin-right: 98px;
+  }
+
+  &_about-company-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #656566;
+    margin-bottom: 20px;
+  }
+
+  &_about-company-list {
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &_item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  &_menu-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #656566;
+    margin-bottom: 20px;
+  }
+
+  &_menu-list {
+    display: flex;
+    .col-1 {
+      margin-right: 52px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .col-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .mobile-show {
+        display: none;
+      }
+    }
+  }
+
+  &_menu-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &_contacts {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  &_contacts-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #656566;
+    margin-bottom: 20px;
+  }
+
+  &_phone {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 21px;
+  }
+
+  &_socials {
+    flex-flow: row-reverse;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  &_address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 70px;
+  }
+
+  &_privacy {
+    color: #e4e5ea;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &_roots {
+    margin-bottom: 5px;
+  }
+
+  &_privacy-policy {
+    text-decoration: underline !important;
+  }
+}
